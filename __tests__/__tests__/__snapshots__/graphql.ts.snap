@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Graphql method parse graphql complexity with gql tag 1`] = `
+"Query GetViewer {
+        viewer() {
+          actor {
+            name,
+            groups {
+              nodes {
+                viewer_admin_type,
+                id,
+                name,
+                viewer_post_status,
+                visibility,
+                group_members {
+                  count,
+                }
+              }
+            }
+          }
+        }
+      }"
+`;
+
+exports[`Graphql method parse graphql gql tag, me() 1`] = `
+"Query GetMe {
+        me() {
+          id,
+        }
+      }"
+`;
+
+exports[`Graphql method parse graphql gql tag, viewer() 1`] = `
+"Query GetMe {
+        viewer() {
+          id,
+        }
+      }"
+`;
