@@ -1,4 +1,4 @@
-// import uuid from 'uuid'
+import uuid from 'uuid'
 import { Agent, IncomingMessage } from 'http'
 import * as got from 'got'
 
@@ -20,7 +20,7 @@ interface SiteData {
 }
 
 export type Context = any & {
-  id: any
+  id: ReturnType<typeof uuid>
   is_temporarily: boolean
   fb_dtsg: string
   status: string
